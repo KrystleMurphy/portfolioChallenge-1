@@ -14,7 +14,10 @@ h1 {
 }
 
 
-h2,
+h2 {
+  display: block;
+}
+
 h3,
 h4,
 h5,
@@ -34,6 +37,11 @@ p {
   display: inline;
   justify-content: space-between;
   list-style: none;
+  margin-right: 10px;
+}
+
+.nav-item {
+  float: right;
 }
 
 .navbar {
@@ -57,7 +65,14 @@ p {
  overflow: hidden;
  height: 200px;
  display: flex;
- text-align: end;
+}
+
+.container {
+  position: relative;
+}
+
+.bottomRight {
+  margin-right: 20px;
 }
 
 .box {
