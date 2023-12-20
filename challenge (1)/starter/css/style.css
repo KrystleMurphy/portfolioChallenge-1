@@ -9,7 +9,11 @@ body {
   line-height: 1.5;
 }
 
-h1,
+h1 {
+  
+}
+
+
 h2,
 h3,
 h4,
@@ -22,6 +26,31 @@ p {
   margin: 0;
 }
 
+.container-fluid {
+  display: flex;
+}
+
+.navbar li {
+  display: inline;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar li:hover {
+  cursor:pointer;
+  opacity: 50%;
+  }
+
+.header {
+  display: flexbox;
+  text-align: center;
+
+}
+
 .hero-banner {
  background: url(../images/02-hero-bg.jpg);
  background-size: cover;
@@ -32,6 +61,12 @@ p {
 }
 
 .box {
+  display: flex;
+  color: black;
+  background-color: aqua;
+}
+
+.name {
   display: flex;
   color: black;
   background-color: aqua;
