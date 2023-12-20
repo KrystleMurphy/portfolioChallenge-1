@@ -21,3 +21,24 @@ h6 {
 p {
   margin: 0;
 }
+
+.hero-banner {
+ background: url(../images/02-hero-bg.jpg);
+ background-size: cover;
+ overflow: hidden;
+ height: 200px;
+ display: flex;
+ text-align: end;
+}
+
+.box {
+  display: flex;
+  color: black;
+  background-color: aqua;
+}
+
+.bottomRight{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
