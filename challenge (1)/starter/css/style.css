@@ -23,7 +23,10 @@ h1 {
 
 
 h2 {
-  display: block;
+  display: inline;
+  max-width: 25%;
+  position: relative;
+  left: 50%;
 }
 
 h3,
@@ -67,7 +70,6 @@ a {
   }
 
 
-
 /* hero banner CSS */
 
 .hero-banner {
@@ -104,5 +106,27 @@ a {
   right: 0;
 }
 
-/* about me */
+/* main body */
 
+img {
+  display: flex;
+  max-width: 150px;
+  position: relative;
+  left: 35%;
+}
+
+.page-section {
+  padding: 20px;
+  /* display: inline-block; */
+}
+
+p {
+  max-width: 70%;
+  position: relative;
+  left: 30%;
+}
+
+.aside {
+  max-width: 25%;
+  border-right: 5px solid black ;
+}
