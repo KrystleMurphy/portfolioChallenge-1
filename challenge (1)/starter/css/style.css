@@ -9,8 +9,16 @@ body {
   line-height: 1.5;
 }
 
-h1 {
+header { 
+  background-color: black;
   
+}
+
+h1 {
+  display: inline;
+  background-color: aqua;
+  font-size: 250%;
+  margin: 2%
 }
 
 
@@ -29,23 +37,28 @@ p {
   margin: 0;
 }
 
-.container-fluid {
-  display: flex;
-}
+/* Nav bar CSS */
 
-.navbar li {
+.navbar {
   display: inline;
   justify-content: space-between;
   list-style: none;
   margin-right: 10px;
+  background-color: black;
 }
 
-.nav-item {
+a {
   float: right;
+  list-style-type: none;
+  margin: 10%;
+  padding: 0;
+  margin: 10px;
+  padding-top: 10px;
+  color: aliceblue;
 }
 
 .navbar {
-  background-color: black;
+
 }
 
 .navbar li:hover {
@@ -53,11 +66,9 @@ p {
   opacity: 50%;
   }
 
-.header {
-  display: flexbox;
-  text-align: center;
 
-}
+
+/* hero banner CSS */
 
 .hero-banner {
  background: url(../images/02-hero-bg.jpg);
@@ -92,3 +103,6 @@ p {
   bottom: 0;
   right: 0;
 }
+
+/* about me */
+
