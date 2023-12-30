@@ -88,8 +88,10 @@ a {
   margin-right: 20px;
 }
 
-.box {
-  display: flex;
+.cool-sub {
+  display: relative;
+  left: 370%;
+  bottom: -70%;
   color: black;
   background-color: aqua;
 }
@@ -100,33 +102,41 @@ a {
   background-color: aqua;
 }
 
-.bottomRight{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+
 
 /* main body */
 
 img {
-  display: flex;
+  /* display: flex; */
   max-width: 150px;
-  position: relative;
-  left: 35%;
+  /* position: relative; */
+  /* left: 35%; */
 }
 
-.page-section {
+/* .page-section {
   padding: 20px;
   /* display: inline-block; */
-}
+/* } */
 
-p {
+/* p {
   max-width: 70%;
   position: relative;
   left: 30%;
-}
 
-.aside {
+} */
+
+/* .aside1 {
   max-width: 25%;
   border-right: 5px solid black ;
+} */
+
+.container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "aside1 content1 content1"
+  "aside2 content2 content2"
+  "aside3 content3 content3"
 }
