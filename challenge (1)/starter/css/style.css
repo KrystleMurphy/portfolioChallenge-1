@@ -23,10 +23,10 @@ h1 {
 
 
 h2 {
-  display: inline;
+  /* display: inline;
   max-width: 25%;
   position: relative;
-  left: 50%;
+  left: 50%; */
 }
 
 h3,
@@ -108,7 +108,7 @@ a {
 
 img {
   /* display: flex; */
-  max-width: 150px;
+  max-width: 100%;
   /* position: relative; */
   /* left: 35%; */
 }
@@ -132,12 +132,28 @@ img {
 
 .container {
   display: grid;
-  gap: 5px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  gap: 5%;
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  grid-template-columns: 0.5fr 2.5fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
   grid-template-areas: 
   "asideabout contentaboutme"
   "asidework contentwork"
   "asidecontact contentcontact"
 }
 
+aside {
+  border-right: solid 3px black;
+  text-align: right;
+  padding: 5%;
+}
+
+.contentaboutme {
+  justify-content: center;
+}
+
+.contentcontact {
+  justify-content: center;
+}
