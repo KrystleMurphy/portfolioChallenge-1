@@ -136,8 +136,9 @@ img {
   margin-top: 5%;
   margin-left: 7%;
   margin-right: 7%;
+  margin-bottom: 5%;
   grid-template-columns: 0.5fr 2.5fr;
-  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-rows: 1fr 2fr 0.25fr;
   grid-template-areas: 
   "asideabout contentaboutme"
   "asidework contentwork"
@@ -150,10 +151,13 @@ aside {
   padding: 5%;
 }
 
-.contentaboutme {
+.contentaboutme .contentcontact {
   justify-content: center;
+  padding: 5%;
+  
 }
 
 .contentcontact {
-  justify-content: center;
+  display: flex;
+  align-items: center;
 }
