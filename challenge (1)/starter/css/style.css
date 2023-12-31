@@ -14,14 +14,10 @@ header {
   
 }
 
-h1 {
-
-}
+h1,
 
 
-h2 {
-
-}
+h2,
 
 h3,
 h4,
@@ -146,21 +142,6 @@ aside {
 
 /* building a grid within a grid for the work section photos */
 
-.portfoliocontainer {
-  display: grid;
-  gap: 5%;
-  /* margin-top: 5%;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-bottom: 5%; */
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
-  grid-template-areas: 
-  "project1 project1"
-  "project2 project3"
-  "project4 project5"
-}
-
 .project1 {
   background-image: url(../images/02-portfolio-4.jpg);
   background-size: cover;
@@ -194,4 +175,18 @@ aside {
 .project1 .project2 .project3 .project4 .project5 {
   background-color: aquamarine;
   border: solid 3px aquamarine;
+}
+
+.portfoliocontainer {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
+}
+
+.workimg {
 }
