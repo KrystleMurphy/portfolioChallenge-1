@@ -15,18 +15,12 @@ header {
 }
 
 h1 {
-  display: inline;
-  background-color: aqua;
-  font-size: 250%;
-  margin: 2%
+
 }
 
 
 h2 {
-  /* display: inline;
-  max-width: 25%;
-  position: relative;
-  left: 50%; */
+
 }
 
 h3,
@@ -42,27 +36,31 @@ p {
 
 /* Nav bar CSS */
 
+.navname {
+  position: absolute;
+  top: -3%;
+  left: 0;
+  background-color: aquamarine;
+}
+
 .navbar {
-  display: inline;
-  justify-content: space-between;
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   margin-right: 10px;
-  background-color: black;
+  background-color: black;  
 }
 
 a {
-  float: right;
+  /* float: right; */
   list-style-type: none;
   margin: 10%;
   padding: 0;
   margin: 10px;
   padding-top: 10px;
-  color: aliceblue;
+  color: aquamarine;
 }
 
-.navbar {
-
-}
 
 .navbar li:hover {
   cursor:pointer;
@@ -89,46 +87,29 @@ a {
 }
 
 .cool-sub {
-  display: relative;
-  left: 370%;
-  bottom: -70%;
+  /* display: flex; */
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  /* left: 370%; */
+  /* bottom: -70%; */
   color: black;
-  background-color: aqua;
+  background-color: aquamarine;
 }
 
 .name {
   display: flex;
   color: black;
-  background-color: aqua;
+  background-color: aquamarine;
 }
 
 
 
-/* main body */
+/* main body css grid */
 
 img {
-  /* display: flex; */
   max-width: 100%;
-  /* position: relative; */
-  /* left: 35%; */
 }
-
-/* .page-section {
-  padding: 20px;
-  /* display: inline-block; */
-/* } */
-
-/* p {
-  max-width: 70%;
-  position: relative;
-  left: 30%;
-
-} */
-
-/* .aside1 {
-  max-width: 25%;
-  border-right: 5px solid black ;
-} */
 
 .container {
   display: grid;
@@ -160,4 +141,57 @@ aside {
 .contentcontact {
   display: flex;
   align-items: center;
+}
+
+
+/* building a grid within a grid for the work section photos */
+
+.portfoliocontainer {
+  display: grid;
+  gap: 5%;
+  /* margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5%; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
+}
+
+.project1 {
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project2 {
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 {
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project4 {
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project5 {
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project1 .project2 .project3 .project4 .project5 {
+  background-color: aquamarine;
+  border: solid 3px aquamarine;
 }
