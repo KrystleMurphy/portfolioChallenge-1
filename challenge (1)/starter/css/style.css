@@ -47,7 +47,7 @@ p {
   background-color: black;  
 }
 
-a {
+.nav-link {
   /* float: right; */
   list-style-type: none;
   margin: 10%;
@@ -103,7 +103,7 @@ a {
 
 /* main body css grid */
 
-img {
+.profilepic {
   max-width: 100%;
 }
 
@@ -188,5 +188,11 @@ aside {
   "project4 project5"
 }
 
-.workimg {
+/* contact me section */
+
+
+a {
+  list-style-type: none;
+  margin: 10%;
+  padding: 0;
 }
