@@ -146,6 +146,8 @@ aside {
   background-image: url(../images/02-portfolio-4.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .project2 {
@@ -179,13 +181,17 @@ aside {
 
 .portfoliocontainer {
   display: grid;
-  gap: 5%;
+  gap: 1%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr 1fr;
-  grid-template-areas: 
-  "project1 project1"
-  "project2 project3"
-  "project4 project5"
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project5";
+}
+
+.project1 {
+  grid-area: project1;
 }
 
 /* contact me section */
