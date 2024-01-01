@@ -14,17 +14,6 @@ header {
   
 }
 
-h1,
-
-
-h2,
-
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 p {
   margin: 0;
@@ -33,11 +22,9 @@ p {
 /* Nav bar CSS */
 
 .navname {
-  position: absolute;
-  top: -3%;
-  left: 0;
   background-color: aquamarine;
-}
+  margin-right: auto;
+  }
 
 .navbar {
   display: flex;
@@ -47,8 +34,11 @@ p {
   background-color: black;  
 }
 
+/* .navbar {
+  align-items: center;
+} */
+
 .nav-link {
-  /* float: right; */
   list-style-type: none;
   margin: 10%;
   padding: 0;
