@@ -11,7 +11,6 @@ body {
 
 header { 
   background-color: black;
-  
 }
 
 
@@ -197,3 +196,49 @@ aside {
   padding: 2%;
 }
 
+
+/* MEDIA Q FOR SMALL SCREENS */ 
+
+@media (width < 600px) {
+
+  header { 
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+  flex-direction: column;
+    padding: 10px;
+  }
+
+  .profilepic { max-width: 40vh;}
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 0.25fr;
+    grid-template-areas: 
+    "asideabout"
+    "contentaboutme"
+    "asidework"
+    "contentwork"
+    "asidecontact"
+    "contentcontact"
+  }
+  
+  .portfoliocontainer {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "project1"
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5";
+  }
+
+
+}
