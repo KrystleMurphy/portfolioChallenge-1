@@ -191,11 +191,8 @@ aside {
 
 /* contact me section */
 
-
-
-
-/* a {
-  list-style-type: none;
-  margin: 10%;
-  padding: 0;
-} */
+.contentcontact a {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
