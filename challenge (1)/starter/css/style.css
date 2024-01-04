@@ -199,9 +199,12 @@ aside {
 
 /* MEDIA Q FOR SMALL SCREENS */ 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
 
-  header { 
+                               /* Take One */
+
+
+   /* header { 
     width: 100%;
   }
 
@@ -209,11 +212,18 @@ aside {
     display: flex;
   flex-direction: column;
     padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
-  .profilepic { max-width: 40vh;}
+  .profilepic { max-width: 40vh;} */
+
+  /*
+
+                              /* Take 2! */
   
-  .container {
+  /* .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 0.25fr;
@@ -239,6 +249,109 @@ aside {
       "project4"
       "project5";
   }
+*/ 
+
+                        /* take 3 */
+/* .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-areas: 
+  "hero-banner"
+
+  "asideabout"
+  "contentaboutme"
+
+  "asidework"
+  "project1"
+  "project2"
+  "project3"
+  "project4"
+  "project5"
+  "asidecontact"
+  "contentcontact"
+} */
 
 
-}
+                        /* take 4 */
+
+                        .navbar {
+                          display: flex;
+                        flex-direction: column;
+                          padding: 10px;
+                          width: 100%;
+                          justify-content: center;
+                          align-items: center;
+                        }
+                      
+                        .profilepic { max-width: 40vh;}
+
+
+                        .container {
+                          display: grid;
+                          grid-template-columns: 1fr;
+                          grid-template-rows: auto 1fr auto;
+                          grid-template-areas:
+                          "hero-banner"
+
+                          "asideabout"
+                          "contentaboutme"
+
+                          "asidework"
+                          "project1"
+                          "project2"
+                          "project3"
+                          "project4"
+                          "project5"
+                          "asidecontact"
+                          "contentcontact"
+                        }
+                        
+                        .hero-banner {
+                          grid-area: hero-banner;
+                        }
+                        .asideabout {
+                          grid-area: asideabout;
+                        }
+                        .contentaboutme {
+                          grid-area: contentaboutme;
+                        }
+                        ..asidework {
+                          grid-area: asidework;
+                        }
+                        .project1 {
+                          grid-area: project1;
+                        }
+                        .project2 {
+                          grid-area: project2;
+                        }
+                        .project3 {
+                          grid-area: project3;
+                        }
+                        .project4 {
+                          grid-area: project4;
+                        }
+                        .project5 {
+                          grid-area: project5;
+                        }
+
+                        .aside { 
+                          align-items: center;
+                          justify-content: center;
+                          border: none;}
+
+                          .contentcontact {
+                            display: block;
+                          }
+
+                          .contentwork {
+                            display: block;
+                            height: 100%
+                          }
+/* 
+                          body .container{
+                            margin: none;
+                          } */
+
+} 
